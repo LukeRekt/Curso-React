@@ -1,16 +1,18 @@
 import './App.css';
-import Form from './components/Form';
-import Evento from './components/Evento';
+import OutraLista from './components/OutraLista';
+
+
 function App() {
-  const nome = 'Maria';
+
+  const meusItens = ['React', 'Vue', 'Angular']
   return (
     <div className="App">
-    <h1>Testando Eventos</h1>
-    <Evento/>
-    <Form/>
+    <h1>Renderizacao de Listas</h1>
+    <OutraLista itens={meusItens}/>
+    <OutraLista itens={[]}/>
     </div>
 
-  );
+  )
 }
 
 export default App
